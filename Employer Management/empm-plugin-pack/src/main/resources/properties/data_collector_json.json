@@ -1,0 +1,32 @@
+[{
+    title : 'Configure Plugin',
+    properties : [        
+        {
+            name : 'url_scheme',
+            label : 'URL Scheme',
+            type : 'textfield',
+            size : '25',
+            required : 'True'
+        },
+        {
+            name : 'url_serverName',
+            label : 'URL Server Name',
+            type : 'textfield',
+            size : '25',
+            required : 'True'
+        },
+        {
+            name : 'url_serverPort',
+            label : 'URL Server Port',
+            type : 'textfield',
+            size : '25'
+        },
+        {
+            name : 'url_contextPath',
+            label : 'URL Context Path',
+            type : 'textfield',
+            size : '25',
+            required : 'True'
+        }
+    ]
+}]

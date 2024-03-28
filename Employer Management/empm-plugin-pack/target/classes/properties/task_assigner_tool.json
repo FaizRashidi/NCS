@@ -1,0 +1,41 @@
+[{
+    title : 'Employer Assigner Tool',
+    properties : [
+        {
+            name: 'app_type',
+            label: "App Type",
+            type: 'radio',
+            required : 'true',            
+            options : [
+                {value: 'empl_reg', label : 'Employer Registration'},
+                {value: 'empl_dereg', label : 'Employer Deregistration'},
+                {value: 'empl_dereg_wd', label : 'Employer Deregistration (Withdrawal)'},
+                {value: 'empl_dereg_cancel', label : 'Employer Deregistration (Cancellation)'},                
+                {value: 'stkhldr_reg', label : 'Stakeholder Registration '},                
+                {value: 'req_change', label : 'Request Change'},                
+                {value: 'pe_write_off', label : 'PE Write Off'},                
+                {value: 'pe_egmnt', label : 'PE Engagement'},
+                {value: 'cksp', label : 'CKSP'} 
+            ]
+        },{
+            name:'req_id',
+            label: "Requester's Workflow  Variable",
+            type:'textfield'
+        },{
+            name:'req_f5_id',
+            label: 'Form 5 User Workflow  Variable (Deregistration)',
+            type:'textfield',
+            control_field: 'app_type',
+            control_value: 'empl_dereg',
+            control_use_regex: 'false',
+        },{
+            name:'officer_id',
+            label: "Officer's Workflow  Variable",
+            type:'textfield'
+        },{
+            name:'approver_id',
+            label: "Approver's Workflow  Variable",
+            type:'textfield'
+        }
+    ]
+}]

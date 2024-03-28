@@ -1,0 +1,28 @@
+[{
+    title : 'EMPM Send Email Tool UNUSED',
+    properties : [{
+            name:"app_type",
+            label: "App Type",
+            type:"radio",
+            required : "true",            
+            options : [
+                {value: 'EMP_REG', label : 'Employer Registration'},
+                {value: 'EMP_DEREG', label : 'Employer Deregistration'},
+                {value: 'EMP_DEREG_WD', label : 'Employer Deregistration (Withdrawal)'},
+                {value: 'STAKEHOLDER', label : 'Stakeholder Registration '}                
+            ]
+        },{
+            name:"req_id",
+            label: "Requester's Workflow  Variable",
+            type:"textfield"
+        },{
+            name:"officer_id",
+            label: "Officer's Workflow  Variable",
+            type:"textfield"
+        },{
+            name:"approver_id",
+            label: "Approver's Workflow  Variable",
+            type:"textfield"
+        }
+    ]
+}]

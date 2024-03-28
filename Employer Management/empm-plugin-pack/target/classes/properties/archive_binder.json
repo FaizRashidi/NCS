@@ -1,0 +1,35 @@
+[{
+    title : '@@audittrail.insert.title@@',
+    properties : [
+        {
+            name : 'actionBy',
+            label : 'Action By (Name)',
+            type : 'textfield',
+            size : '50'
+        },
+        {
+            name : 'statusFormField',
+            label : 'Status Text Field',
+            type : 'textfield',
+            size : '50'
+        },
+        {
+            name : 'statusFixed',
+            label : 'Status (Fixed)',
+            type : 'textfield',
+            size : '50',
+        },
+        {
+            name : 'remarksFormField',
+            label : 'Remarks Text Field',
+            type : 'textfield',
+            size : '50'
+        },
+        {
+            name : 'remarksFixed',
+            label : 'Remarks (Fixed)',
+            type : 'textfield',
+            size : '50'
+        }
+    ]
+}]

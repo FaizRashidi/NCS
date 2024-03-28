@@ -1,0 +1,17 @@
+[{
+    title : 'HRDC - EMPM - Change Potential Employer Status Tool',
+    properties : [
+       {
+            name:'status',
+            label: 'Status',
+            type:'SelectBox',
+            required : 'true',            
+            options : [
+               {value: 'cksp', label : 'CKSP'},
+               {value: 'nfa', label : 'NFA'},
+               {value: 'form1received', label : 'Form 1 Received'}
+            
+               ]
+        }
+    ]   
+}]

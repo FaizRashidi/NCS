@@ -1,0 +1,24 @@
+[{
+    title : 'EMPM User Account Creation Tool',
+    properties : [{
+            name:"acc_type",
+            label: "Account Type",
+            type:"radio",
+            required : "true",            
+            options : [
+                {value: 'temp', label : 'Temporary'},
+                {value: 'real', label : 'Real'}
+            ]
+        },{
+            name:"app_type",
+            label: "Application Type",
+            type:"radio",
+            required : "true",            
+            options : [
+                {value: 'stakeholder', label : 'Stakeholder'},
+                {value: 'employer', label : 'Employer'},
+                {value: 'dereg', label : 'Deregistration'}
+            ]
+        },
+    ]
+}]

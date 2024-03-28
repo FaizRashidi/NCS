@@ -1,0 +1,43 @@
+[{
+    title : 'Audit Trail Form',
+    properties : [{
+        name : 'id',
+        label : 'ID',
+        type : 'textfield',
+        required : 'True',
+        regex_validation : '^[a-zA-Z0-9_]+$',
+        validation_message : 'Data Not Valid'
+    },
+    {
+        name : 'label',
+        label : 'Label',
+        type : 'textfield',
+        value : 'Audit Trail'
+    },{
+        name : 'rowSort',
+        label : 'Date Sort',
+        type : 'SelectBox',
+        options : [
+                {value:'asc', label:'Ascending'},
+                {value:'desc', label:'Descending'}
+            ]
+    },{
+        name : 'dateFormat',
+        label : 'Date Format',
+        type : 'SelectBox',
+        options : [
+                {value:'yyyy-MM-dd hh:mm a', label:'yyyy-MM-dd hh:mm a'},
+                {value:'yyyy-MM-dd HH:mm:ss', label:'yyyy-MM-dd HH:mm:ss'},
+                {value:'dd-MM-yyyy hh:mm a', label:'dd-MM-yyyy hh:mm a'}
+            ]
+    },{
+        name : 'includeNum',
+        label : 'Include Numbering',
+        type : 'checkbox',
+        value : 'False',
+        options : [{
+            value : 'true',
+            label : ''
+        }]
+    }]
+}]

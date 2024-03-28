@@ -1,0 +1,54 @@
+[{
+    title : 'Email-Template Mapper Tool',
+    properties : [{
+        name:'from',
+        label:'From',
+        type:'textfield'
+    },{
+        name:'to',
+        label:'To (Specific email address)',
+        type:'textfield'
+    },{
+        name:'to_pt_id',
+        label:'To (Participant ID)',
+        type:'textfield'
+    },{
+        name:'cc',
+        label:'CC (Specific email address)',
+        type:'textfield'
+    },{
+        name:'cc_pt_id',
+        label:'CC (Participant ID)',
+        type:'textfield'
+    },
+    {
+        name:'app_type',
+        label: 'App Type',
+        type:'radio',
+        required : 'true', 
+        options : [
+            {value: 'empl_reg', label : 'Employer Registration'},
+            {value: 'empl_dereg', label : 'Employer Deregistration'},
+            {value: 'empl_dereg_f5', label : 'Employer Deregistration Form 5'},
+            {value: 'empl_dereg_wd', label : 'Employer Deregistration (Withdrawal)'},
+            {value: 'stkhldr_reg', label : 'Stakeholder Registration '},                
+            {value: 'req_change', label : 'Request Change'},                
+            {value: 'pe_write_off', label : 'PE Write Off'},
+            {value: 'cksp_complaint',label : 'CKSP Complaint'}
+        ]
+    },{
+        name:'non_template_setup',
+        label: 'Non Template Setup',
+        type: 'radio',                 
+        options : [
+            {value: 'true', label : 'Yes'},
+            {value: 'false', label : 'No'}            
+        ]
+    },{
+        name:'mail_template',
+        label: 'Email Template',
+        type:'selectbox',
+        options_ajax : '[CONTEXT_PATH]/web/json/app[APP_PATH]/plugin/com.tms.hrdc.webservice.EmpmAPI/service?method=getEmailTemplate',
+        required : 'true'
+    }]
+}]

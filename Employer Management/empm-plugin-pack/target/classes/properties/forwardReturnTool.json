@@ -1,0 +1,48 @@
+[{
+    title : 'HRDC - EMPM - Return/Forward Controller Tool',
+    properties : 
+        [{
+            name:'app_type',
+            label:'App Type',
+            type:'radio',
+            required :'true',            
+            options :[
+                {value:'empl_reg', label :'Employer Registration'},
+                {value:'empl_dereg', label :'Employer Deregistration'},
+                {value:'empl_dereg_wd', label :'Employer Deregistration (Withdrawal)'},
+                {value:'empl_dereg_cancel', label :'Employer Deregistration (Cancellation)'},                
+                {value:'stkhldr_reg', label :'Stakeholder Registration '},                
+                {value:'req_change', label :'Request Change'},                
+                {value:'pe_write_off', label :'PE Write Off'},                
+                {value:'pe_egmnt', label :'PE Engagement'}                
+            ]
+        },{
+            name: "ops_type",
+            label: 'Status Value',
+            required : "true",  
+            type: "textfield"
+        },{
+            name: "fwd_to",
+            label: "Forward Assignee Value",
+            required : "true",  
+            type: "textfield"
+        },{
+            name:"apvr_type",
+            label: "Approver Type",
+            type:"radio",
+            required : "true",            
+            options : [
+                {value: 'officer', label : 'Officer'},
+                {value: 'approver', label : 'Approver'}
+            ]
+        },{
+            name: "officer_id",
+            label: "Officer's WfV",
+            type: "textfield"
+        },{
+            name: "approver_id",
+            label: "Approver's WfV",
+            type: "textfield"
+        }
+    ]
+}]

@@ -1,0 +1,9 @@
+[{
+    title : 'Employer Management Binder Property',
+    properties : [{
+        name : 'table',
+        label : 'Custom Table Name',
+        type : 'textfield',
+        description : 'name will be "emails"'
+    }]
+}]

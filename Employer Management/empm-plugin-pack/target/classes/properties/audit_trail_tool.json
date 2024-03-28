@@ -1,0 +1,54 @@
+[{
+    title : 'EMPM Audit Trail Tool',
+    properties : [
+        {
+            name:'app_type',
+            label: 'App Type',
+            type:'radio',
+            required : 'true',            
+            options : [
+               {value: 'empl_reg', label : 'Employer Registration'},
+               {value: 'empl_dereg', label : 'Employer Deregistration'},
+               {value: 'empl_dereg_wd', label : 'Employer Deregistration (Withdrawal)'},
+               {value: 'empl_dereg_cancel', label : 'Employer Deregistration (Cancellation)'},                
+               {value: 'stkhldr_reg', label : 'Stakeholder Registration '},                
+               {value: 'req_change', label : 'Request Change'},                
+               {value: 'pe_write_off', label : 'PE Write Off'},
+               {value:'pe_egmnt', label :'PE Engagement'},
+               {value: 'cksp_complaint', label: 'CKSP Complaint'}
+            ]
+        },{
+            name:'status',
+            label: 'Status',
+            type:'SelectBox',
+            required : 'true',            
+            options : [
+               {value: 'submitted', label : 'Newly Submitted'},
+               {value: 'submittedF5', label : 'Newly Submitted FORM 5'},
+               {value: 'verification', label : 'Verification'},
+               {value: 'verificationF5', label : 'Verification FORM 5'},
+               {value: 'approval', label : 'Approval'},
+               {value: 'approvalF5', label : 'Approval FORM 5'},
+               {value: 'query', label : 'Query Response'},
+               {value: 'query_responded', label : 'Query Responded'},
+               {value: 'query_timeout', label : 'Query Timeout'},
+               {value: 'rejection', label : 'Rejection'},
+               {value: 'ckspStatusUpdate', label: 'CKSP Status Update'}
+               ]
+        },{ 
+            name: 'updateEmpStatus', 
+            label: "Update Employer's History Log",  
+            type: 'CheckBox', 
+            options:[ 
+                   {value: 'YES', label : 'Yes'} 
+            ] 
+        },{ 
+            name: 'reprocess', 
+            label: "Is Reprocess?",  
+            type: 'CheckBox', 
+            options:[ 
+                   {value: 'YES', label : 'Yes'} 
+            ] 
+        }
+    ]   
+}]
